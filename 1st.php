@@ -128,7 +128,7 @@ else if($y==0) {
 
 }
 
-
+else {echo"Enter the Values Then Submit";}
 
 
 
