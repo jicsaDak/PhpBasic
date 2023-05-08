@@ -26,7 +26,7 @@
 <body>
 <div class="phpcoding">
 			<section class="headeroption">
-				<h2>PHP BASICS</h2>
+				<h2>PHP BASICS 2</h2>
 			</section>
 
 
