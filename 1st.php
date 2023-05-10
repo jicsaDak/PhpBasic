@@ -154,8 +154,9 @@ if ($xx==20000){echo"Gucci Bag";}
 elseif ($xx==6500){echo"Levis Bag";}
 elseif ($xx==200){echo"Something";}
 elseif ($xx==25400){echo"Gucci Bag"."<br>"."Gucci Belt";}
-else {echo"Enter amount = 20000 or 6500 or 200 or 25400 for a output ";}}
-else {echo"Enter amount = 20000 or 6500 or 200 or 25400 for a output ";}
+    else {echo"Enter amount = 20000 or 6500 or 200 or 25400 for a output ";}}
+
+elseif() {echo"Enter amount = 20000 or 6500 or 200 or 25400 for a output ";}
 
 
 
