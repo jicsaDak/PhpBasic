@@ -114,8 +114,6 @@ echo "." ;
      than 0 and less than 10 print their string value e.g. [input: 8  9 ; Output : eight nine] ,
      if one or both numbers are greater than 10 then print summation of two number. E.g. [input: 8 12 ; output: 20 ]</h1></tr>
 
-
-
 <form method="post">
 first Number 
 <input type="number" name="num1" id="num1">
@@ -124,7 +122,6 @@ Second Number
 <input type="submit" name="submit" value="submit">
 
 </form>
-
 
 <?php 
 if (isset($_REQUEST['submit'])){
@@ -174,8 +171,6 @@ switch($num1){
 echo " ";
 
 
-
-
                             switch($num2){
                                 case 1:
                                 echo "one";
@@ -211,22 +206,6 @@ echo " ";
                                                         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 else{
 
@@ -237,9 +216,6 @@ else{
 }
     
 }
-
-
-
 
 ?>
 </h3>
