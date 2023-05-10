@@ -133,7 +133,10 @@ if (isset($_REQUEST['submit'])){
 
 if ($num1 > 0 && $num2 > 0){if  ($num1 <= 10 && $num2 <=10){
 
+?>
+<h3>
 
+<?php 
 switch($num1){
     case 1:
     echo "one";
@@ -169,6 +172,9 @@ switch($num1){
                             }
 
 echo " ";
+
+
+
 
                             switch($num2){
                                 case 1:
@@ -221,8 +227,6 @@ echo " ";
 
 
 
-
-
 }
 else{
 
@@ -237,6 +241,9 @@ else{
 
 
 
+?>
+</h3>
+<?php 
 
 
 
