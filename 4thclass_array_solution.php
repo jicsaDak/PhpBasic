@@ -11,7 +11,7 @@
 
 <form action="" method="POST">
 
-<input type="number" name="n">
+<input type="number" name="n" require>
 <input type="submit" name="submit" value="Submit">
 
 </form>
@@ -22,9 +22,9 @@ $n1=0;
         
 
 $n1= $_POST['n'];
-    
 
-for($i=0;$i<$n1;$i++){
+echo "Dynamic field number = ".$n1."<br>";
+for($i=1;$i<=$n1;$i++){
 ?>
 Enter Number <?=$i;?> :   
 <input type="number" name="num<?= $i;?>" ><br>
@@ -32,6 +32,7 @@ Enter Number <?=$i;?> :
 <?php
     
 }
+
     }
     else {
 
@@ -39,7 +40,7 @@ Enter Number <?=$i;?> :
         
              }
          
-       
+            
    
 ?>
 <input type="hidden" name="n" value="<?=$n1?>">
@@ -62,7 +63,7 @@ $sumation=0;
     $n1=$_REQUEST['n']; 
     if($n1!=""){
         $sumation=0;
-    for ($i=0;$i<$n1;$i++){
+    for ($i=1;$i<=$n1;$i++){
     
   echo $snum .$i.$ki_r_bolbo.$_REQUEST['num'.$i]."<br>";
   
