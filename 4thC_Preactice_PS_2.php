@@ -17,6 +17,7 @@
     echo "The array Element Number is= " . $l;
     echo "<br>";
     $ini = $array[0];
+    
 
     for ($i = 0; $i < $l; $i++) {
 

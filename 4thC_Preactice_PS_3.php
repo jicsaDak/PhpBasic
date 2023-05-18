@@ -17,8 +17,8 @@
 
     $stri = "hellow";
     $n = strlen($stri);
-    $temp = 0;
-    $temp = array();
+
+    $temp = array_fill(0, $n, 0);
 
     for ($i = 0; $i < $n; $i++) {
 
@@ -26,30 +26,25 @@
             if ($stri[$i] === $stri[$j]) {
 
                 $temp[$i]++;
-               
-
-
-
-
-            }
+            } 
         }
     }
 
     for ($i = 0; $i < $n; $i++) {
         $stri[$i];
         $Dupli = false;
-    
-        
+
+
         for ($j = 0; $j < $i; $j++) {
             if ($stri[$j] === $stri[$i]) {
                 $Dupli = true;
                 break;
             }
         }
-    
-        
+
+
         if (!$Dupli) {
-            echo $stri[$i] .":".$temp[$i]. "<br>";
+            echo $stri[$i] . ":" . $temp[$i] . "<br>";
         }
     }
 

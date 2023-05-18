@@ -20,13 +20,17 @@
 
     for ($i = 0; $i < $l; $i++) {
         echo $ai = $array[$i];
-        echo "<br>";
+  
         if ($ai % 2 == 0) {
-            echo "even" . "<br>";
+            echo " Even" . "<br>";
             $sumofaie += $ai;
         }
-    }
+        else {
 
+            echo "<br>";
+        }
+    }
+echo "<br>";
     echo "Output :" . $sumofaie;
 
 
