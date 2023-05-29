@@ -23,55 +23,51 @@
 
                             String Compression:</br>
                             Input: "aabbbcccc"
-                       
+
                             <hr>
-                            Output : 
+                            Output :
                             <?php
 
-                            function chacount( $stri){
+                            function chacount($stri)
+                            {
 
-   
-    $n = strlen($stri);
+                                $n = strlen($stri);
 
-    $temp = array_fill(0, $n, 0);
+                                $temp = array_fill(0, $n, 0);
 
-    for ($i = 0; $i < $n; $i++) {
+                                for ($i = 0; $i < $n; $i++) {
 
-        for ($j = 0; $j < $n; $j++) {
-            if ($stri[$i] === $stri[$j]) {
+                                    for ($j = 0; $j < $n; $j++) {
+                                        if ($stri[$i] === $stri[$j]) {
 
-                $temp[$i]++;
-            } 
-        }
-    }
+                                            $temp[$i]++;
+                                        }
+                                    }
+                                }
 
-    for ($i = 0; $i < $n; $i++) {
-        $stri[$i];
-        $Dupli = false;
+                                for ($i = 0; $i < $n; $i++) {
+                                    $stri[$i];
+                                    $Dupli = false;
 
-
-        for ($j = 0; $j < $i; $j++) {
-            if ($stri[$j] === $stri[$i]) {
-                $Dupli = true;
-                break;
-            }
-        }
-
-
-        if (!$Dupli) {
-          echo  $stri[$i]. $temp[$i];
-        }
-    }
-}
-
-$input="aabbbcccc";
+                                    for ($j = 0; $j < $i; $j++) {
+                                        if ($stri[$j] === $stri[$i]) {
+                                            $Dupli = true;
+                                            break;
+                                        }
+                                    }
 
 
- chacount($input);
+                                    if (!$Dupli) {
+                                        echo  $stri[$i] . $temp[$i];
+                                    }
+                                }
+                            }
 
-    ?>
+                            $input = "aabbbcccc";
 
+                            chacount($input);
 
+                            ?>
 
                         </p>
                     </div>
